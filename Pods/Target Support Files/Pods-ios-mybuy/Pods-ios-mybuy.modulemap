@@ -1,0 +1,6 @@
+framework module Pods_ios_mybuy {
+  umbrella header "Pods-ios-mybuy-umbrella.h"
+
+  export *
+  module * { export * }
+}
