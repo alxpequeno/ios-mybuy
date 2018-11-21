@@ -19,20 +19,29 @@ class ViewController: UIViewController {
     
     @IBAction func btnIngresar(_ sender: Any) {
         print("btnIngresar")
+        
+        performSegue(withIdentifier: "goMensajes", sender: nil)
     }
     
     
     @IBAction func btnRegistrarse(_ sender: Any) {
         print("btnRegistrarse")
+        
+        performSegue(withIdentifier: "goRegistrarse", sender: nil)
     }
     
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        txtNumero.keyboardType = UIKeyboardType.numberPad
     }
 
 
