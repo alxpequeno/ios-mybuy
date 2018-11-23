@@ -181,16 +181,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQx-MA-KQt">
-                                <rect key="frame" x="139" y="373" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdf-Va-kiq">
                                 <rect key="frame" x="100" y="487" width="175" height="30"/>
                                 <state key="normal" title="Aceptar"/>
+                                <connections>
+                                    <action selector="btAceptar:" destination="9Fj-UX-tZp" eventType="touchUpInside" id="7XS-Gc-NKN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6eO-bY-NCM">
                                 <rect key="frame" x="30" y="159" width="315" height="30"/>
@@ -198,12 +194,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripcion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQx-MA-KQt">
+                                <rect key="frame" x="30" y="294" width="315" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qKe-3c-tRR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoría" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YaB-Dc-aTz">
+                                <rect key="frame" x="30" y="249" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wQx-MA-KQt" firstAttribute="top" secondItem="YaB-Dc-aTz" secondAttribute="bottom" constant="15" id="7dS-f6-Ylw"/>
+                            <constraint firstItem="wQx-MA-KQt" firstAttribute="leading" secondItem="coB-bJ-FXQ" secondAttribute="leading" constant="30" id="9YG-YU-3wa"/>
+                            <constraint firstItem="coB-bJ-FXQ" firstAttribute="trailing" secondItem="wQx-MA-KQt" secondAttribute="trailing" constant="30" id="Gpt-4h-zo1"/>
                             <constraint firstItem="gQr-1z-plo" firstAttribute="top" secondItem="coB-bJ-FXQ" secondAttribute="top" constant="50" id="HNC-Re-OeV"/>
                             <constraint firstItem="coB-bJ-FXQ" firstAttribute="trailing" secondItem="pqK-DV-g50" secondAttribute="trailing" constant="30" id="IW3-8d-dV0"/>
                             <constraint firstItem="pqK-DV-g50" firstAttribute="leading" secondItem="coB-bJ-FXQ" secondAttribute="leading" constant="30" id="KFz-bL-5rz"/>
+                            <constraint firstItem="coB-bJ-FXQ" firstAttribute="trailing" secondItem="YaB-Dc-aTz" secondAttribute="trailing" constant="30" id="MyO-C1-Vom"/>
                             <constraint firstItem="gQr-1z-plo" firstAttribute="leading" secondItem="coB-bJ-FXQ" secondAttribute="leading" constant="30" id="QJ3-Lp-BYl"/>
                             <constraint firstItem="coB-bJ-FXQ" firstAttribute="bottom" secondItem="Fdf-Va-kiq" secondAttribute="bottom" constant="150" id="aJT-oY-ITC"/>
                             <constraint firstItem="coB-bJ-FXQ" firstAttribute="trailing" secondItem="gQr-1z-plo" secondAttribute="trailing" constant="30" id="ctm-SG-lzw"/>
@@ -211,15 +226,24 @@
                             <constraint firstItem="6eO-bY-NCM" firstAttribute="top" secondItem="gQr-1z-plo" secondAttribute="bottom" constant="15" id="e6e-dm-z0A"/>
                             <constraint firstItem="Fdf-Va-kiq" firstAttribute="leading" secondItem="coB-bJ-FXQ" secondAttribute="leading" constant="100" id="eiE-Is-Uud"/>
                             <constraint firstItem="coB-bJ-FXQ" firstAttribute="trailing" secondItem="Fdf-Va-kiq" secondAttribute="trailing" constant="100" id="pav-tm-xx5"/>
+                            <constraint firstItem="YaB-Dc-aTz" firstAttribute="top" secondItem="pqK-DV-g50" secondAttribute="bottom" constant="15" id="tfq-R3-3Ib"/>
+                            <constraint firstItem="YaB-Dc-aTz" firstAttribute="leading" secondItem="coB-bJ-FXQ" secondAttribute="leading" constant="30" id="tgg-DT-f3m"/>
                             <constraint firstItem="6eO-bY-NCM" firstAttribute="leading" secondItem="coB-bJ-FXQ" secondAttribute="leading" constant="30" id="w0z-Ux-mfT"/>
                             <constraint firstItem="coB-bJ-FXQ" firstAttribute="trailing" secondItem="6eO-bY-NCM" secondAttribute="trailing" constant="30" id="ykG-Xd-hDw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="coB-bJ-FXQ"/>
                     </view>
+                    <connections>
+                        <outlet property="txtCategoria" destination="YaB-Dc-aTz" id="gSK-Q0-sdh"/>
+                        <outlet property="txtContrasena" destination="6eO-bY-NCM" id="G4J-X2-spd"/>
+                        <outlet property="txtDescripcion" destination="wQx-MA-KQt" id="Pfk-uZ-LZ4"/>
+                        <outlet property="txtNombre" destination="pqK-DV-g50" id="XhV-W6-Bth"/>
+                        <outlet property="txtNumero" destination="gQr-1z-plo" id="goW-3Q-zwJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tv9-Wv-YVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="-725"/>
+            <point key="canvasLocation" x="1861.5999999999999" y="-725.48725637181417"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RnG-Dv-aXu">
