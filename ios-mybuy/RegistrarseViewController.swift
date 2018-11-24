@@ -52,8 +52,31 @@ class RegistrarseViewController: UIViewController {
         let URL_REGISTRO = "http://localhost:8080/MyBuy/rest/MyBuyRest/registrarUsuario"
         
         Alamofire.request(URL_REGISTRO,method: .post,parameters: parametros, encoding: JSONEncoding.default).responseJSON { response in
-            
-            print(response)
+            switch response.result {
+            case .success(let resultado) :
+                
+                let r = resultado as? Int
+                
+                if(r == 1) {
+                    let alertController = UIAlertController(title: "", message: "Registro Exitoso", preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                } else {
+                    let alertController = UIAlertController(title: "ERROR", message: "No se pudo registrar", preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "Cerrar", style: .default, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                
+                break
+            case .failure(let error):
+                print(error)
+                break
+            }
         }
         
         

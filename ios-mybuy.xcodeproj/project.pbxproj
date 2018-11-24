@@ -15,6 +15,7 @@
 		5E1881F521A5A16500D9447F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1881F321A5A16500D9447F /* LaunchScreen.storyboard */; };
 		5E1881FD21A5A57100D9447F /* RegistrarseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1881FC21A5A57100D9447F /* RegistrarseViewController.swift */; };
 		5E1881FF21A5AC6800D9447F /* MensajesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1881FE21A5AC6800D9447F /* MensajesViewController.swift */; };
+		5E43788021A97F5B00991B8B /* Contacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43787F21A97F5B00991B8B /* Contacto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5E1881F621A5A16500D9447F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1881FC21A5A57100D9447F /* RegistrarseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarseViewController.swift; sourceTree = "<group>"; };
 		5E1881FE21A5AC6800D9447F /* MensajesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajesViewController.swift; sourceTree = "<group>"; };
+		5E43787F21A97F5B00991B8B /* Contacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacto.swift; sourceTree = "<group>"; };
 		B170DA75D4393E10089A00BC /* Pods-ios-mybuy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mybuy.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-mybuy/Pods-ios-mybuy.release.xcconfig"; sourceTree = "<group>"; };
 		B66AF2A66393C824226AEB45 /* Pods_ios_mybuy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_mybuy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FE3AF9052E96B60E67BF63 /* Pods-ios-mybuy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mybuy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-mybuy/Pods-ios-mybuy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				5E1881F621A5A16500D9447F /* Info.plist */,
 				5E1881FC21A5A57100D9447F /* RegistrarseViewController.swift */,
 				5E1881FE21A5AC6800D9447F /* MensajesViewController.swift */,
+				5E43787F21A97F5B00991B8B /* Contacto.swift */,
 			);
 			path = "ios-mybuy";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				5E1881FD21A5A57100D9447F /* RegistrarseViewController.swift in Sources */,
 				5E1881ED21A5A16500D9447F /* ViewController.swift in Sources */,
 				5E1881EB21A5A16500D9447F /* AppDelegate.swift in Sources */,
+				5E43788021A97F5B00991B8B /* Contacto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
